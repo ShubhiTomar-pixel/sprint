@@ -615,6 +615,196 @@ function App() {
       </section>
 
       {/* About Me Section */}
+      {/* Onboarding Section */}
+      <section className="py-24 px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="backdrop-blur-[20px] bg-white/[0.04] rounded-3xl p-12 lg:p-16 border border-white/[0.08] shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_8px_40px_rgba(139,92,246,0.15)] transition-all duration-700 hover:border-[#A855F7]/30 hover:bg-white/[0.06]">
+            <div className="flex items-center gap-4 mb-12">
+              <span className="text-4xl">🔀</span>
+              <h2 className="text-4xl lg:text-5xl font-light text-[#F8F8F8] tracking-tight"
+                  style={{ textShadow: '0 0 8px rgba(168, 85, 247, 0.3)' }}>
+                Onboarding: Brilliant or Brutal?
+              </h2>
+            </div>
+            
+            {/* Dual Impact */}
+            <div className="mb-16">
+              <div className="backdrop-blur-[20px] bg-white/[0.06] rounded-2xl p-10 border border-[#A855F7]/30 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_0_30px_rgba(168,85,247,0.2)] transition-all duration-500 hover:border-[#A855F7]/50 hover:bg-white/[0.08]">
+                <div className="flex items-center gap-3 mb-8">
+                  <span className="text-2xl">🔀</span>
+                  <h3 className="text-3xl font-medium text-[#F8F8F8] tracking-wide" style={{ textShadow: '0 0 6px rgba(168, 85, 247, 0.2)' }}>Dual Impact: Activation Booster or Churn Trigger</h3>
+                </div>
+                <p className="text-xl text-[#D0D0D0] font-light leading-relaxed mb-8 tracking-wide">
+                  Superhuman's onboarding polarizes users. It's either a <span className="font-medium text-[#F8F8F8]">"best-in-class"</span> productivity launchpad or a choke point that kills adoption.
+                </p>
+                <div className="grid sm:grid-cols-3 gap-8">
+                  <div className="text-center">
+                    <div className="text-4xl font-light text-[#A855F7] mb-2" style={{ filter: 'drop-shadow(0 0 15px rgba(168, 85, 247, 0.5))' }}>33</div>
+                    <p className="text-[#D0D0D0] font-light tracking-wide">users loved the Concierge + Coaching combo</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-4xl font-light text-red-400 mb-2" style={{ filter: 'drop-shadow(0 0 15px rgba(248, 113, 113, 0.5))' }}>13</div>
+                    <p className="text-[#D0D0D0] font-light tracking-wide">users churned early due to friction</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-lg font-medium text-[#C084FC] mb-2" style={{ filter: 'drop-shadow(0 0 10px rgba(192, 132, 252, 0.5))' }}>Most Affected</div>
+                    <p className="text-[#D0D0D0] font-light tracking-wide">Developers, Gmail loyalists, and Outlook users</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="grid lg:grid-cols-2 gap-12 mb-16">
+              {/* Friction Points */}
+              <div className="backdrop-blur-[20px] bg-white/[0.04] rounded-2xl p-8 border border-red-500/30 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_0_30px_rgba(239,68,68,0.2)] transition-all duration-500 hover:border-red-500/50 hover:bg-white/[0.06]">
+                <div className="flex items-center gap-3 mb-6">
+                  <span className="text-2xl">🧭</span>
+                  <h3 className="text-2xl font-medium text-[#F8F8F8] tracking-wide" style={{ textShadow: '0 0 6px rgba(168, 85, 247, 0.2)' }}>The Friction Points</h3>
+                </div>
+                <div className="space-y-4 mb-6">
+                  {[
+                    "Setup was heavy-handed and confusing",
+                    "Learning curve too steep — I gave up"
+                  ].map((quote, index) => (
+                    <div key={index} className="flex items-start gap-3 p-4 backdrop-blur-[20px] bg-red-500/[0.08] rounded-xl border border-red-500/20">
+                      <Quote className="w-4 h-4 text-red-400 flex-shrink-0 mt-1" />
+                      <span className="text-[#F8F8F8] font-light italic tracking-wide">"{quote}"</span>
+                    </div>
+                  ))}
+                </div>
+                <ul className="space-y-3">
+                  {[
+                    "Outlook/Exchange integration breaks early",
+                    "Gmail mental model shift creates dissonance",
+                    "Developers wanted API-first options, not demo hand-holding"
+                  ].map((item, index) => (
+                    <li key={index} className="flex items-center gap-3 text-[#D0D0D0] font-light tracking-wide">
+                      <div className="w-2 h-2 rounded-full bg-red-500 shadow-[0_0_8px_rgba(239,68,68,0.6)]"></div>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              
+              {/* Who's Affected */}
+              <div className="backdrop-blur-[20px] bg-white/[0.04] rounded-2xl p-8 border border-orange-500/30 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_0_30px_rgba(249,115,22,0.2)] transition-all duration-500 hover:border-orange-500/50 hover:bg-white/[0.06]">
+                <div className="flex items-center gap-3 mb-6">
+                  <span className="text-2xl">🎯</span>
+                  <h3 className="text-2xl font-medium text-[#F8F8F8] tracking-wide" style={{ textShadow: '0 0 6px rgba(168, 85, 247, 0.2)' }}>Who's Affected</h3>
+                </div>
+                <div className="space-y-4">
+                  {[
+                    { emoji: "🧑‍💻", title: "Developers", desc: "Need flexibility: \"Skip demo + connect via CLI\"" },
+                    { emoji: "🧑‍💼", title: "Team leads", desc: "Learning curve blocks onboarding teams" },
+                    { emoji: "📨", title: "Gmail power users", desc: "Confused by folder structure, features" },
+                    { emoji: "🧑‍🏫", title: "New users", desc: "Mentally overloaded at first touch" }
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-start gap-4">
+                      <span className="text-2xl flex-shrink-0">{item.emoji}</span>
+                      <div>
+                        <h4 className="font-medium text-[#F8F8F8] mb-1 tracking-wide" style={{ textShadow: '0 0 6px rgba(168, 85, 247, 0.2)' }}>{item.title}</h4>
+                        <p className="text-[#D0D0D0] font-light text-sm tracking-wide">{item.desc}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+            
+            {/* User Quotes */}
+            <div className="mb-16">
+              <div className="backdrop-blur-[20px] bg-white/[0.04] rounded-2xl p-8 border border-blue-500/30 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_0_30px_rgba(59,130,246,0.2)] transition-all duration-500 hover:border-blue-500/50 hover:bg-white/[0.06]">
+                <div className="flex items-center gap-3 mb-6">
+                  <span className="text-2xl">💬</span>
+                  <h3 className="text-2xl font-medium text-[#F8F8F8] tracking-wide" style={{ textShadow: '0 0 6px rgba(168, 85, 247, 0.2)' }}>User Quotes</h3>
+                </div>
+                <div className="grid sm:grid-cols-3 gap-6">
+                  {[
+                    "The setup was so intense I never came back.",
+                    "Beautiful UI, brutal learning curve.",
+                    "Best onboarding I've seen… but only once I got through it."
+                  ].map((quote, index) => (
+                    <div key={index} className="p-4 backdrop-blur-[20px] bg-blue-500/[0.08] rounded-xl border border-blue-500/20">
+                      <div className="flex items-start gap-3">
+                        <Quote className="w-4 h-4 text-blue-400 flex-shrink-0 mt-1" />
+                        <span className="text-[#F8F8F8] font-light italic tracking-wide">"{quote}"</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+            
+            <div className="grid lg:grid-cols-2 gap-12 mb-16">
+              {/* What's Working */}
+              <div className="backdrop-blur-[20px] bg-white/[0.04] rounded-2xl p-8 border border-green-500/30 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_0_30px_rgba(34,197,94,0.2)] transition-all duration-500 hover:border-green-500/50 hover:bg-white/[0.06]">
+                <div className="flex items-center gap-3 mb-6">
+                  <span className="text-2xl">✅</span>
+                  <h3 className="text-2xl font-medium text-[#F8F8F8] tracking-wide" style={{ textShadow: '0 0 6px rgba(168, 85, 247, 0.2)' }}>What's Working</h3>
+                </div>
+                <ul className="space-y-4">
+                  {[
+                    { emoji: "🎓", text: "Concierge onboarding" },
+                    { emoji: "💡", text: "Guided productivity tips" },
+                    { emoji: "🧘", text: "Clarity around inbox habits like Inbox Zero" }
+                  ].map((item, index) => (
+                    <li key={index} className="flex items-center gap-4 text-[#D0D0D0] font-light text-lg tracking-wide">
+                      <span className="text-xl">{item.emoji}</span>
+                      {item.text}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              
+              {/* What's Missing */}
+              <div className="backdrop-blur-[20px] bg-white/[0.04] rounded-2xl p-8 border border-yellow-500/30 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_0_30px_rgba(234,179,8,0.2)] transition-all duration-500 hover:border-yellow-500/50 hover:bg-white/[0.06]">
+                <div className="flex items-center gap-3 mb-6">
+                  <span className="text-2xl">🔧</span>
+                  <h3 className="text-2xl font-medium text-[#F8F8F8] tracking-wide" style={{ textShadow: '0 0 6px rgba(168, 85, 247, 0.2)' }}>What's Still Missing</h3>
+                </div>
+                <ul className="space-y-4">
+                  {[
+                    { emoji: "✂️", text: "Option to skip demo data and go API-direct" },
+                    { emoji: "🧭", text: "In-app coach marks and contextual onboarding" },
+                    { emoji: "🧱", text: "Lightweight mode for experienced users" },
+                    { emoji: "📥", text: "Outlook/Exchange-specific support" }
+                  ].map((item, index) => (
+                    <li key={index} className="flex items-center gap-4 text-[#D0D0D0] font-light text-lg tracking-wide">
+                      <span className="text-xl">{item.emoji}</span>
+                      {item.text}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            
+            {/* Suggested Actions */}
+            <div className="backdrop-blur-[20px] bg-white/[0.06] rounded-2xl p-10 border border-[#A855F7]/30 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_0_30px_rgba(168,85,247,0.2)] transition-all duration-500 hover:border-[#A855F7]/50 hover:bg-white/[0.08]">
+              <div className="flex items-center gap-3 mb-8">
+                <span className="text-2xl">📌</span>
+                <h3 className="text-3xl font-medium text-[#F8F8F8] tracking-wide" style={{ textShadow: '0 0 6px rgba(168, 85, 247, 0.2)' }}>Suggested Actions (High Urgency)</h3>
+              </div>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[
+                  { emoji: "⚙️", title: "Create Onboarding Modes", desc: "Beginner vs. Developer paths" },
+                  { emoji: "🔄", title: "Offer Skip Demo", desc: "IMAP/Gmail API connect directly" },
+                  { emoji: "🧠", title: "Inject Tooltips", desc: "Explain Superhuman's mental model" },
+                  { emoji: "🛠️", title: "Fix Outlook Issues", desc: "Known Exchange migration failures" },
+                  { emoji: "🔁", title: "Retain Concierge", desc: "Keep high-touch activation option" }
+                ].map((item, index) => (
+                  <div key={index} className="backdrop-blur-[20px] bg-white/[0.04] rounded-2xl p-6 border border-white/[0.08] hover:border-[#A855F7]/40 hover:bg-white/[0.06] transition-all duration-500 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_0_25px_rgba(168,85,247,0.15)] group">
+                    <div className="text-3xl mb-4">{item.emoji}</div>
+                    <h4 className="text-lg font-medium text-[#F8F8F8] mb-3 tracking-wide" style={{ textShadow: '0 0 6px rgba(168, 85, 247, 0.2)' }}>{item.title}</h4>
+                    <p className="text-[#D0D0D0] font-light text-sm leading-relaxed tracking-wide">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Me Section */}
       <section className="py-24 px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <div className="backdrop-blur-[20px] bg-white/[0.04] rounded-3xl p-12 lg:p-16 border border-white/[0.08] shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_8px_40px_rgba(139,92,246,0.15)] transition-all duration-700 hover:border-[#A855F7]/30 hover:bg-white/[0.06]">
