@@ -489,6 +489,131 @@ function App() {
         </div>
       </section>
 
+      {/* Calendar Integration Section */}
+      <section className="py-24 px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="backdrop-blur-[20px] bg-white/[0.04] rounded-3xl p-12 lg:p-16 border border-white/[0.08] shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_8px_40px_rgba(139,92,246,0.15)] transition-all duration-700 hover:border-[#A855F7]/30 hover:bg-white/[0.06]">
+            <div className="flex items-center gap-4 mb-12">
+              <span className="text-4xl">🗓️</span>
+              <h2 className="text-4xl lg:text-5xl font-light text-[#F8F8F8] tracking-tight"
+                  style={{ textShadow: '0 0 8px rgba(168, 85, 247, 0.3)' }}>
+                Calendar Integration: A Daily Workflow Blocker That's Costing You Users
+              </h2>
+            </div>
+            
+            <div className="grid lg:grid-cols-2 gap-12">
+              {/* Left Column */}
+              <div className="space-y-12">
+                {/* Why It Hurts */}
+                <div className="backdrop-blur-[20px] bg-white/[0.04] rounded-2xl p-8 border border-red-500/30 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_0_30px_rgba(239,68,68,0.2)] transition-all duration-500 hover:border-red-500/50 hover:bg-white/[0.06]">
+                  <div className="flex items-center gap-3 mb-6">
+                    <span className="text-2xl">⚠️</span>
+                    <h3 className="text-2xl font-medium text-[#F8F8F8] tracking-wide" style={{ textShadow: '0 0 6px rgba(168, 85, 247, 0.2)' }}>Why It Hurts</h3>
+                  </div>
+                  <p className="text-[#D0D0D0] font-light text-lg leading-relaxed mb-6 tracking-wide">
+                    Poor calendar integration isn't just a feature flaw — it's a <span className="font-medium text-[#F8F8F8]">daily workflow blocker</span> that breaks user flow, especially on Windows, Android, and Outlook accounts.
+                  </p>
+                  <div className="space-y-4 mb-6">
+                    {[
+                      "Lack of seamless calendar on Windows/Android blocks daily workflow.",
+                      "Event edits don't sync — what's the point?"
+                    ].map((quote, index) => (
+                      <div key={index} className="flex items-start gap-3 p-4 backdrop-blur-[20px] bg-red-500/[0.08] rounded-xl border border-red-500/20">
+                        <Quote className="w-4 h-4 text-red-400 flex-shrink-0 mt-1" />
+                        <span className="text-[#F8F8F8] font-light italic tracking-wide">"{quote}"</span>
+                      </div>
+                    ))}
+                  </div>
+                  <p className="text-[#D0D0D0] font-light leading-relaxed tracking-wide">
+                    This is the <span className="font-medium text-[#F8F8F8]">#2 most requested feature</span> and a top churn trigger — users can't justify premium pricing when basic calendar sync fails.
+                  </p>
+                </div>
+
+                {/* Where It Breaks */}
+                <div className="backdrop-blur-[20px] bg-white/[0.04] rounded-2xl p-8 border border-orange-500/30 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_0_30px_rgba(249,115,22,0.2)] transition-all duration-500 hover:border-orange-500/50 hover:bg-white/[0.06]">
+                  <div className="flex items-center gap-3 mb-6">
+                    <span className="text-2xl">💣</span>
+                    <h3 className="text-2xl font-medium text-[#F8F8F8] tracking-wide" style={{ textShadow: '0 0 6px rgba(168, 85, 247, 0.2)' }}>Where It Breaks</h3>
+                  </div>
+                  <ul className="space-y-4">
+                    {[
+                      "Ambiguous date selection UX",
+                      "No iCloud calendar support",
+                      "No parity between macOS and Windows/Android",
+                      "Broken sync with Outlook/Exchange",
+                      "Missing quick-glance calendar pane"
+                    ].map((item, index) => (
+                      <li key={index} className="flex items-center gap-4 text-[#D0D0D0] font-light text-lg tracking-wide">
+                        <div className="w-2 h-2 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.6)]"></div>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              
+              {/* Right Column */}
+              <div className="space-y-12">
+                {/* What Users Want */}
+                <div className="backdrop-blur-[20px] bg-white/[0.04] rounded-2xl p-8 border border-blue-500/30 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_0_30px_rgba(59,130,246,0.2)] transition-all duration-500 hover:border-blue-500/50 hover:bg-white/[0.06]">
+                  <div className="flex items-center gap-3 mb-6">
+                    <span className="text-2xl">💡</span>
+                    <h3 className="text-2xl font-medium text-[#F8F8F8] tracking-wide" style={{ textShadow: '0 0 6px rgba(168, 85, 247, 0.2)' }}>What Users Want</h3>
+                  </div>
+                  <ul className="space-y-4">
+                    {[
+                      "Read-only calendar sidebar (desktop + Android)",
+                      "Smart Compose blocks like \"Send Availability\"",
+                      "Group scheduling with Meet/Teams",
+                      "Sync with tools like Todoist, Obsidian"
+                    ].map((item, index) => (
+                      <li key={index} className="flex items-center gap-4 text-[#D0D0D0] font-light text-lg tracking-wide">
+                        <div className="w-2 h-2 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.6)]"></div>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Competitor Edge */}
+                <div className="backdrop-blur-[20px] bg-white/[0.04] rounded-2xl p-8 border border-yellow-500/30 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_0_30px_rgba(234,179,8,0.2)] transition-all duration-500 hover:border-yellow-500/50 hover:bg-white/[0.06]">
+                  <div className="flex items-center gap-3 mb-6">
+                    <span className="text-2xl">🥊</span>
+                    <h3 className="text-2xl font-medium text-[#F8F8F8] tracking-wide" style={{ textShadow: '0 0 6px rgba(168, 85, 247, 0.2)' }}>Competitor Edge</h3>
+                  </div>
+                  <p className="text-[#D0D0D0] font-light text-lg leading-relaxed tracking-wide">
+                    <span className="font-medium text-[#F8F8F8]">Spark, Apple Mail, and Outlook</span> are consistently praised for their native, reliable calendar integrations that work seamlessly across all platforms — giving users one less reason to switch to Superhuman.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Actionables */}
+            <div className="mt-12 backdrop-blur-[20px] bg-white/[0.06] rounded-2xl p-10 border border-[#A855F7]/30 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_0_30px_rgba(168,85,247,0.2)] transition-all duration-500 hover:border-[#A855F7]/50 hover:bg-white/[0.08]">
+              <div className="flex items-center gap-3 mb-8">
+                <span className="text-2xl">✅</span>
+                <h3 className="text-3xl font-medium text-[#F8F8F8] tracking-wide" style={{ textShadow: '0 0 6px rgba(168, 85, 247, 0.2)' }}>Actionables</h3>
+              </div>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[
+                  { emoji: "🖥️", title: "Add Calendar Pane", desc: "Lightweight calendar sidebar for Windows + Android" },
+                  { emoji: "📅", title: "Build Platform Parity", desc: "Full Outlook/Exchange & iCloud support" },
+                  { emoji: "🤖", title: "Smart Compose Blocks", desc: "\"Send Availability\" and scheduling shortcuts" },
+                  { emoji: "🔗", title: "External Integrations", desc: "Connect with Todoist, Obsidian, and productivity tools" },
+                  { emoji: "🔧", title: "Fix Two-Way Sync", desc: "Especially critical for Outlook users" }
+                ].map((item, index) => (
+                  <div key={index} className="backdrop-blur-[20px] bg-white/[0.04] rounded-2xl p-6 border border-white/[0.08] hover:border-[#A855F7]/40 hover:bg-white/[0.06] transition-all duration-500 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_0_25px_rgba(168,85,247,0.15)] group">
+                    <div className="text-3xl mb-4">{item.emoji}</div>
+                    <h4 className="text-lg font-medium text-[#F8F8F8] mb-3 tracking-wide" style={{ textShadow: '0 0 6px rgba(168, 85, 247, 0.2)' }}>{item.title}</h4>
+                    <p className="text-[#D0D0D0] font-light text-sm leading-relaxed tracking-wide">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* About Me Section */}
       <section className="py-24 px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
