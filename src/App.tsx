@@ -359,6 +359,136 @@ function App() {
         </div>
       </section>
 
+      {/* Pricing Section */}
+      <section className="py-24 px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="backdrop-blur-[20px] bg-white/[0.04] rounded-3xl p-12 lg:p-16 border border-white/[0.08] shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_8px_40px_rgba(139,92,246,0.15)] transition-all duration-700 hover:border-[#A855F7]/30 hover:bg-white/[0.06]">
+            <div className="flex items-center gap-4 mb-12">
+              <span className="text-4xl">💸</span>
+              <h2 className="text-4xl lg:text-5xl font-light text-[#F8F8F8] tracking-tight"
+                  style={{ textShadow: '0 0 8px rgba(168, 85, 247, 0.3)' }}>
+                Pricing: The #1 Churn Trigger That Also Holds Loyalty Potential
+              </h2>
+            </div>
+            
+            <div className="grid lg:grid-cols-2 gap-12">
+              {/* Left Column */}
+              <div className="space-y-12">
+                {/* Why Users Leave */}
+                <div className="backdrop-blur-[20px] bg-white/[0.04] rounded-2xl p-8 border border-red-500/30 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_0_30px_rgba(239,68,68,0.2)] transition-all duration-500 hover:border-red-500/50 hover:bg-white/[0.06]">
+                  <div className="flex items-center gap-3 mb-6">
+                    <span className="text-2xl">⚠️</span>
+                    <h3 className="text-2xl font-medium text-[#F8F8F8] tracking-wide" style={{ textShadow: '0 0 6px rgba(168, 85, 247, 0.2)' }}>Why Users Leave</h3>
+                  </div>
+                  <p className="text-[#D0D0D0] font-light text-lg leading-relaxed mb-6 tracking-wide">
+                    Despite loving <span className="font-medium text-[#F8F8F8]">Superhuman</span>'s speed, pricing is the single biggest churn trigger, repeatedly cited with frustration and disbelief:
+                  </p>
+                  <div className="space-y-4 mb-6">
+                    {[
+                      "$40/month was my worst tech decision ever.",
+                      "Feels like a premium Gmail skin with a startup tax.",
+                      "Why charge extra for AI on top of $30/month?"
+                    ].map((quote, index) => (
+                      <div key={index} className="flex items-start gap-3 p-4 backdrop-blur-[20px] bg-red-500/[0.08] rounded-xl border border-red-500/20">
+                        <Quote className="w-4 h-4 text-red-400 flex-shrink-0 mt-1" />
+                        <span className="text-[#F8F8F8] font-light italic tracking-wide">"{quote}"</span>
+                      </div>
+                    ))}
+                  </div>
+                  <p className="text-[#D0D0D0] font-light leading-relaxed tracking-wide">
+                    From inactivity fees to lack of flexible plans, many users — especially early founders — feel priced out before they even start.
+                  </p>
+                </div>
+
+                {/* Hidden Delight */}
+                <div className="backdrop-blur-[20px] bg-white/[0.04] rounded-2xl p-8 border border-green-500/30 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_0_30px_rgba(34,197,94,0.2)] transition-all duration-500 hover:border-green-500/50 hover:bg-white/[0.06]">
+                  <div className="flex items-center gap-3 mb-6">
+                    <span className="text-2xl">💡</span>
+                    <h3 className="text-2xl font-medium text-[#F8F8F8] tracking-wide" style={{ textShadow: '0 0 6px rgba(168, 85, 247, 0.2)' }}>Hidden Delight</h3>
+                  </div>
+                  <p className="text-[#D0D0D0] font-light text-lg leading-relaxed mb-6 tracking-wide">
+                    Not everyone's unhappy. A surprising number of users say:
+                  </p>
+                  <div className="p-4 backdrop-blur-[20px] bg-green-500/[0.08] rounded-xl border border-green-500/20 mb-6">
+                    <div className="flex items-start gap-3">
+                      <Quote className="w-4 h-4 text-green-400 flex-shrink-0 mt-1" />
+                      <span className="text-[#F8F8F8] font-light italic tracking-wide">"Was skeptical about the price... now I can't imagine going back."</span>
+                    </div>
+                  </div>
+                  <p className="text-[#D0D0D0] font-light leading-relaxed tracking-wide">
+                    When <span className="font-medium text-[#F8F8F8]">Superhuman</span> delivers on speed + experience, pricing concerns disappear — especially when users perceive real time saved.
+                  </p>
+                </div>
+              </div>
+
+              {/* Right Column */}
+              <div className="space-y-12">
+                {/* Competitor Threat */}
+                <div className="backdrop-blur-[20px] bg-white/[0.04] rounded-2xl p-8 border border-orange-500/30 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_0_30px_rgba(249,115,22,0.2)] transition-all duration-500 hover:border-orange-500/50 hover:bg-white/[0.06]">
+                  <div className="flex items-center gap-3 mb-6">
+                    <span className="text-2xl">🔍</span>
+                    <h3 className="text-2xl font-medium text-[#F8F8F8] tracking-wide" style={{ textShadow: '0 0 6px rgba(168, 85, 247, 0.2)' }}>Competitor Threat</h3>
+                  </div>
+                  <div className="space-y-4">
+                    <p className="text-[#D0D0D0] font-light leading-relaxed tracking-wide">
+                      <span className="font-medium text-[#F8F8F8]">Outlook, Gmail, Airmail, Hey, and Spark</span> all get praised as cheaper, good-enough alternatives
+                    </p>
+                    <p className="text-[#D0D0D0] font-light leading-relaxed tracking-wide">
+                      Users say <span className="italic">"Gmail's free nature blocks adoption,"</span> even if they admire <span className="font-medium text-[#F8F8F8]">Superhuman</span>'s design
+                    </p>
+                  </div>
+                </div>
+
+                {/* What's Missing */}
+                <div className="backdrop-blur-[20px] bg-white/[0.04] rounded-2xl p-8 border border-yellow-500/30 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_0_30px_rgba(234,179,8,0.2)] transition-all duration-500 hover:border-yellow-500/50 hover:bg-white/[0.06]">
+                  <div className="flex items-center gap-3 mb-6">
+                    <span className="text-2xl">🚨</span>
+                    <h3 className="text-2xl font-medium text-[#F8F8F8] tracking-wide" style={{ textShadow: '0 0 6px rgba(168, 85, 247, 0.2)' }}>What's Missing</h3>
+                  </div>
+                  <p className="text-[#D0D0D0] font-light text-lg leading-relaxed mb-6 tracking-wide">
+                    While <span className="font-medium text-[#F8F8F8]">Superhuman</span> has pricing tiers and free trials, many still ask for:
+                  </p>
+                  <ul className="space-y-3">
+                    {[
+                      "A \"Lite\" plan based on connected accounts",
+                      "Built-in ROI justification (e.g., hours saved/month)",
+                      "Transparent reminders before free trials end"
+                    ].map((item, index) => (
+                      <li key={index} className="flex items-center gap-3 text-[#D0D0D0] font-light tracking-wide">
+                        <div className="w-2 h-2 rounded-full bg-yellow-500 shadow-[0_0_8px_rgba(234,179,8,0.6)]"></div>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Actionables */}
+            <div className="mt-12 backdrop-blur-[20px] bg-white/[0.06] rounded-2xl p-10 border border-[#A855F7]/30 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_0_30px_rgba(168,85,247,0.2)] transition-all duration-500 hover:border-[#A855F7]/50 hover:bg-white/[0.08]">
+              <div className="flex items-center gap-3 mb-8">
+                <span className="text-2xl">✅</span>
+                <h3 className="text-3xl font-medium text-[#F8F8F8] tracking-wide" style={{ textShadow: '0 0 6px rgba(168, 85, 247, 0.2)' }}>Actionables</h3>
+              </div>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {[
+                  { emoji: "🔬", title: "Test Price Elasticity", desc: "Run a quick survey + A/B test" },
+                  { emoji: "⚙️", title: "Introduce a Lite Tier", desc: "Unlock a flexible entry point for lighter users" },
+                  { emoji: "🧠", title: "Justify with ROI", desc: "Surface time-saved metrics inside the UI" },
+                  { emoji: "🎯", title: "Address Objections Head-On", desc: "Use positive testimonials and competitor comparisons in marketing" }
+                ].map((item, index) => (
+                  <div key={index} className="backdrop-blur-[20px] bg-white/[0.04] rounded-2xl p-6 border border-white/[0.08] hover:border-[#A855F7]/40 hover:bg-white/[0.06] transition-all duration-500 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_0_25px_rgba(168,85,247,0.15)] group">
+                    <div className="text-3xl mb-4">{item.emoji}</div>
+                    <h4 className="text-lg font-medium text-[#F8F8F8] mb-3 tracking-wide" style={{ textShadow: '0 0 6px rgba(168, 85, 247, 0.2)' }}>{item.title}</h4>
+                    <p className="text-[#D0D0D0] font-light text-sm leading-relaxed tracking-wide">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* About Me Section */}
       <section className="py-24 px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
