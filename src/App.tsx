@@ -42,7 +42,7 @@ function App() {
             </h1>
             
             <p className="text-xl sm:text-2xl text-[#D0D0D0] mb-12 leading-relaxed font-light max-w-4xl mx-auto tracking-wider animate-fade-in-delay">
-              A deep dive into optimization opportunities that could revolutionize productivity workflows
+              A founder-grade teardown of 10,000+ user reviews revealing what's slowing users down — and how to fix it
             </p>
             
             <div className="flex items-center justify-center gap-4 text-gray-300 animate-fade-in-delay">
