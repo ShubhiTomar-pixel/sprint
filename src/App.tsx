@@ -830,15 +830,21 @@ function App() {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <button className="group flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-[#A855F7] to-[#8B5CF6] rounded-2xl font-medium text-white hover:from-[#9333EA] hover:to-[#7C3AED] transition-all duration-300 hover:transform hover:scale-105 shadow-[0_0_25px_rgba(168,85,247,0.4)] hover:shadow-[0_0_40px_rgba(168,85,247,0.6)] border border-[#A855F7]/30 relative overflow-hidden tracking-wide">
+              <button 
+                onClick={() => window.location.href = 'mailto:shubhitomar29@gmail.com'}
+                className="group flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-[#A855F7] to-[#8B5CF6] rounded-2xl font-medium text-white hover:from-[#9333EA] hover:to-[#7C3AED] transition-all duration-300 hover:transform hover:scale-105 shadow-[0_0_25px_rgba(168,85,247,0.4)] hover:shadow-[0_0_40px_rgba(168,85,247,0.6)] border border-[#A855F7]/30 relative overflow-hidden tracking-wide cursor-pointer"
+              >
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                 <Mail className="w-5 h-5" />
                 Get in Touch
               </button>
-              <button className="group flex items-center justify-center gap-3 px-8 py-4 backdrop-blur-[20px] bg-white/[0.06] border border-white/20 rounded-2xl font-medium text-white hover:bg-white/[0.08] hover:border-[#A855F7]/30 transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_0_25px_rgba(168,85,247,0.2)] relative overflow-hidden tracking-wide">
+              <button 
+                onClick={() => window.open('https://www.linkedin.com/in/shubhi-tomar/', '_blank')}
+                className="group flex items-center justify-center gap-3 px-8 py-4 backdrop-blur-[20px] bg-white/[0.06] border border-white/20 rounded-2xl font-medium text-white hover:bg-white/[0.08] hover:border-[#A855F7]/30 transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_0_25px_rgba(168,85,247,0.2)] relative overflow-hidden tracking-wide cursor-pointer"
+              >
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#A855F7]/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                 <ExternalLink className="w-5 h-5" />
-                View Portfolio
+                LinkedIn
               </button>
             </div>
           </div>
