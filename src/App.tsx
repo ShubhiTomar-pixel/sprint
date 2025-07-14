@@ -97,7 +97,7 @@ function App() {
         <div className="absolute inset-0 bg-gradient-to-b from-purple-900/10 to-transparent" />
         
         <div className="max-w-6xl mx-auto relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent flex items-center justify-center gap-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white flex items-center justify-center gap-4">
             <span className="text-5xl">⚡</span>
             TL;DR
           </h2>
@@ -171,7 +171,7 @@ function App() {
         <div className="absolute inset-0 bg-gradient-to-b from-blue-900/10 to-transparent" />
         
         <div className="max-w-6xl mx-auto relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
             What We Did
           </h2>
           
@@ -286,7 +286,8 @@ function App() {
         <div className="absolute inset-0 bg-gradient-to-b from-green-900/10 to-transparent" />
         
         <div className="max-w-6xl mx-auto relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white flex items-center justify-center gap-4">
+            <span className="text-5xl">🤖</span>
             Tagging Logic (LLM Layer)
           </h2>
           
@@ -1119,7 +1120,7 @@ function App() {
         <div className="absolute inset-0 bg-gradient-to-b from-green-900/10 to-transparent" />
         
         <div className="max-w-6xl mx-auto relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
             Key Insights
           </h2>
           
@@ -1171,7 +1172,7 @@ function App() {
         <div className="absolute inset-0 bg-gradient-to-b from-indigo-900/10 to-transparent" />
         
         <div className="max-w-6xl mx-auto relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent flex items-center justify-center gap-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white flex items-center justify-center gap-4">
             <span className="text-5xl">🧾</span>
             Deliverables
           </h2>
@@ -1238,7 +1239,7 @@ function App() {
         <div className="absolute inset-0 bg-gradient-to-b from-yellow-900/10 to-transparent" />
         
         <div className="max-w-4xl mx-auto relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent flex items-center justify-center gap-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white flex items-center justify-center gap-4">
             <span className="text-5xl">💡</span>
             What I Learned
           </h2>
@@ -1270,7 +1271,7 @@ function App() {
         <div className="absolute inset-0 bg-gradient-to-b from-purple-900/20 to-transparent" />
         
         <div className="max-w-4xl mx-auto relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
             About Me
           </h2>
           
